@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F0F27BD1CCF2B020074A4E6 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F0F27BC1CCF2B020074A4E6 /* DetailViewController.m */; };
 		2F8418FE1CCD6A7C0000E2A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8418FD1CCD6A7C0000E2A4 /* main.m */; };
 		2F8419011CCD6A7C0000E2A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8419001CCD6A7C0000E2A4 /* AppDelegate.m */; };
 		2F8419041CCD6A7C0000E2A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8419031CCD6A7C0000E2A4 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F0F27BB1CCF2B020074A4E6 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		2F0F27BC1CCF2B020074A4E6 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		2F8418F91CCD6A7C0000E2A4 /* DreamCatcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamCatcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8418FD1CCD6A7C0000E2A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2F8418FF1CCD6A7C0000E2A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -63,6 +66,8 @@
 				2F8419021CCD6A7C0000E2A4 /* ViewController.h */,
 				2F8419031CCD6A7C0000E2A4 /* ViewController.m */,
 				2F8419051CCD6A7C0000E2A4 /* Main.storyboard */,
+				2F0F27BB1CCF2B020074A4E6 /* DetailViewController.h */,
+				2F0F27BC1CCF2B020074A4E6 /* DetailViewController.m */,
 				2F8419081CCD6A7C0000E2A4 /* Assets.xcassets */,
 				2F84190A1CCD6A7C0000E2A4 /* LaunchScreen.storyboard */,
 				2F84190D1CCD6A7C0000E2A4 /* Info.plist */,
@@ -152,6 +157,7 @@
 				2F8419041CCD6A7C0000E2A4 /* ViewController.m in Sources */,
 				2F8419011CCD6A7C0000E2A4 /* AppDelegate.m in Sources */,
 				2F8418FE1CCD6A7C0000E2A4 /* main.m in Sources */,
+				2F0F27BD1CCF2B020074A4E6 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +306,7 @@
 				2F8419121CCD6A7C0000E2A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
