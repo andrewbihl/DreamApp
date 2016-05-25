@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
+
 @interface ViewController : UIViewController
+@property NSMutableArray* descriptions;
 
 @end
 

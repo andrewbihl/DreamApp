@@ -7,8 +7,11 @@
 //
 
 #import "DetailViewController.h"
+#import "ViewController.h"
+
 
 @interface DetailViewController ()<UITextViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
@@ -21,27 +24,10 @@
     self.title = self.titleString;
 }
 
--(BOOL)textViewShouldBeginEditing:(UITextView *)textView{
-    return true;
+-(void)viewWillDisappear:(BOOL)animated{
+    NSString* newDescription = self.textView.text;
+    [self.delegate editDescription:newDescription];
 }
--(void)textViewDidBeginEditing:(UITextView *)textView{
-    
-}
--(void)textViewDidEndEditing:(UITextView *)textView{
-    
-}
--(void)textViewDidChange:(UITextView *)textView{
-    self.descriptionString = self.textView.text;
-    
-}
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
--(IBAction)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    UIViewController* listView = segue.destinationViewController;
 
-    
-}
 
 @end

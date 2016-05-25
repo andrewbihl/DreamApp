@@ -9,10 +9,9 @@
 #import "ViewController.h"
 #import "DetailViewController.h"
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface ViewController ()<DetailViewControllerDelegate, UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property NSMutableArray* titles;
-@property NSMutableArray* descriptions;
 @end
 
 @implementation ViewController
@@ -23,6 +22,13 @@
     self.descriptions = [[NSMutableArray alloc] init];
 }
 
+-(void)editDescription:(NSString*)newDescription{
+    NSLog(@"Oh shit it worked");
+    NSUInteger currentDescriptionIndex =  self.tableView.indexPathForSelectedRow.row;
+    [self.descriptions removeObjectAtIndex:currentDescriptionIndex];
+    [self.descriptions insertObject:newDescription atIndex:currentDescriptionIndex];
+    [self.tableView reloadData];
+}
 
 -(void)presentDreamEntry{
     UIAlertController* alertController = [UIAlertController alertControllerWithTitle:@"Enter new dream" message:nil preferredStyle:UIAlertControllerStyleAlert];
@@ -109,6 +115,7 @@
     DetailViewController *dvc = segue.destinationViewController;
     dvc.titleString = [self.titles objectAtIndex:self.tableView.indexPathForSelectedRow.row];
     dvc.descriptionString = [self.descriptions objectAtIndex:self.tableView.indexPathForSelectedRow.row];
+    //dvc.arrayIndex = self.tableView.indexPathForSelectedRow.row;
+    dvc.delegate = self;
 }
--(IBAction)
 @end
